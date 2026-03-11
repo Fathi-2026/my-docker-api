@@ -4,12 +4,13 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.json({ 
-        message: "welcome
-        ! Your API is running successfully.",
+        // Put the message on one single line
+        message: "Welcome! Your API is running successfully.",
         status: "Online"
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+// Added '0.0.0.0' so Railway can find your app
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
 });

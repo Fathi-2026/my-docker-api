@@ -18,10 +18,3 @@ Network Config: Fixed Railway's Service Port to match the EXPOSE 3000 in the Doc
 Syntax: Fixed broken strings in server.js that caused "Crashed" status on startup. [17]
 Workflow Cleanup: Removed duplicate .yml files to prevent conflicting build processes. [18]
 How to add this to your project:
-In your code editor, create a new file named README.md. [19]
-Paste the text above into it. [20]
-Push it to GitHub:
-powershell
-git add README.md
-git commit -m "docs: add project documentation"
-git push origin main
